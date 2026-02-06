@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firework Clock</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { min-height: 100vh; }
+    .bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .bg-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.55);
+      z-index: -1;
+    }
+    body {
+      font-family: Georgia, serif;
+      color: #ddd;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+    }
+    a { color: #ddd; text-decoration: none; font-size: 14px; }
+    a:hover { text-decoration: underline; }
+    .back { margin-bottom: 2rem; }
+    .back a:hover { text-decoration: none; }
+    .project-header { margin-bottom: 1.5rem; }
+    .project-header h1 { font-size: 1.4rem; font-weight: normal; margin-bottom: 0.25rem; }
+    .project-tagline { font-size: 15px; color: #999; margin-bottom: 1rem; }
+    .game-wrap { width: 100%; max-width: 800px; margin-bottom: 2rem; }
+    .game-wrap iframe { width: 100%; height: 500px; border: 0; display: block; }
+    .project-details { max-width: 560px; }
+    .project-details p { font-size: 15px; margin-bottom: 0.75rem; }
+    .project-actions { margin-top: 2rem; }
+    .project-actions a[href="projectlist.html"]:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <img class="bg" src="image/shan.jpg" alt="">
+  <div class="bg-overlay"></div>
+  <div class="back"><a href="projectlist.html">← back</a></div>
+
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>Firework Clock</h1>
+      <p class="project-tagline">烟花时钟</p>
+    </div>
+
+    <div class="game-wrap">
+      <iframe src="https://editor.p5js.org/luy464/full/b6DsEdZEy" title="Firework Clock"></iframe>
+    </div>
+
+    <div class="project-details">
+      <p>烟花时钟 · Firework Clock</p>
+      <div class="project-actions">
+        <a href="projectlist.html">← back</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

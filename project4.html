@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>路 · 2025</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { min-height: 100vh; }
+    .bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .bg-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.72);
+      z-index: -1;
+    }
+    body {
+      font-family: Georgia, serif;
+      color: #333;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+    }
+    a { color: #333; text-decoration: none; font-size: 14px; }
+    a:hover { text-decoration: underline; }
+    .back { margin-bottom: 2rem; }
+    .back a:hover { text-decoration: none; }
+    .project-header { margin-bottom: 2rem; }
+    .project-header h1 { font-size: 1.4rem; font-weight: normal; margin-bottom: 0.25rem; }
+    .project-tagline { font-size: 15px; color: #555; }
+    .video-wrapper { margin-bottom: 2rem; }
+    .vimeo-embed { position: relative; width: 100%; }
+    .vimeo-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .project-details { max-width: 560px; margin-bottom: 2rem; }
+    .project-details h2 { font-size: 1rem; font-weight: normal; margin: 1.5rem 0 0.5rem; }
+    .project-details p { font-size: 15px; margin-bottom: 0.75rem; }
+    .project-gallery { margin-bottom: 2rem; }
+    .project-gallery h2 { font-size: 1rem; font-weight: normal; margin-bottom: 1rem; }
+    .project-gallery img { display: block; width: 100%; max-width: 800px; height: auto; margin-bottom: 1rem; }
+    .project-actions { margin-top: 1.5rem; }
+    .project-actions a:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <img class="bg" src="image/screenshot10.jpg" alt="">
+  <div class="bg-overlay"></div>
+  <div class="back"><a href="projectlist.html">← back</a></div>
+
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>路 · 2025</h1>
+      <p class="project-tagline">Road · Fujian 2025</p>
+    </div>
+
+    <div class="video-wrapper">
+      <div class="vimeo-embed" style="padding:75% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/1162206063?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="road"></iframe>
+      </div>
+    </div>
+
+    <div class="project-details">
+      <div class="project-info">
+        <h2>中文｜项目简介</h2>
+        <p>
+          这是一个真实的故事。在一个记不清楚的日子，朋友他说这是最后一个春天。他一直问我怎么活下去，给他一条路。这也是一个纪录片。这段仅存的友谊。
+        </p>
+        <p>2025年 · 福建</p>
+
+        <h2>English｜Project Description</h2>
+        <p>
+          This is a true story. On a day I can no longer remember clearly, a friend said this was the last spring. He kept asking me how to go on living, to give him a road. This is also a documentary. This last remaining friendship.
+        </p>
+        <p>2025 · Fujian</p>
+      </div>
+
+      <div class="project-gallery">
+        <h2>Screenshots</h2>
+        <img src="image/screenshot10.jpg" alt="">
+        <img src="image/screenshot11.jpg" alt="">
+        <img src="image/screenshot12.jpg" alt="">
+        <img src="image/screenshot13.jpg" alt="">
+      </div>
+
+      <div class="project-actions">
+        <a href="projectlist.html">← back</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

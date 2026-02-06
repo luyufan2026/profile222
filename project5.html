@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seeking Buddha.exe</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { min-height: 100vh; }
+    .bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .bg-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.55);
+      z-index: -1;
+    }
+    body {
+      font-family: Georgia, serif;
+      color: #ddd;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+    }
+    a { color: #ddd; text-decoration: none; font-size: 14px; }
+    a:hover { text-decoration: underline; }
+    .back { margin-bottom: 2rem; }
+    .back a:hover { text-decoration: none; }
+    .project-header { margin-bottom: 1.5rem; }
+    .project-header h1 { font-size: 1.4rem; font-weight: normal; margin-bottom: 0.25rem; }
+    .project-tagline { font-size: 15px; color: #999; margin-bottom: 1rem; }
+    .game-wrap { width: 100%; max-width: 800px; margin-bottom: 2rem; }
+    .game-wrap iframe { width: 100%; height: 500px; border: 0; display: block; }
+    .project-details { max-width: 560px; }
+    .project-details h2 { font-size: 1rem; font-weight: normal; margin: 1.5rem 0 0.5rem; }
+    .project-details h3 { font-size: 14px; font-weight: normal; margin: 1rem 0 0.35rem; color: #999; }
+    .project-details p { font-size: 15px; margin-bottom: 0.75rem; }
+    .spec-list { margin: 0 0 0.75rem 1.25rem; font-size: 15px; }
+    .spec-list li { margin-bottom: 0.35rem; }
+    .project-actions { margin-top: 2rem; }
+    .project-actions a { margin-right: 1rem; }
+    .project-actions a[href="projectlist.html"]:hover { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <img class="bg" src="image/shan.jpg" alt="">
+  <div class="bg-overlay"></div>
+  <div class="back"><a href="projectlist.html">← back</a></div>
+
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>Seeking Buddha.exe</h1>
+      <p class="project-tagline">An autobiographical game disguised as a pilgrimage</p>
+    </div>
+
+    <div class="game-wrap">
+      <iframe src="https://editor.p5js.org/luy464/full/vl3b6CP0W" title="Seeking Buddha.exe"></iframe>
+    </div>
+
+    <div class="project-details">
+      <div class="project-info">
+        <h2>游戏简介</h2>
+        <p>
+          <strong>Seeking Buddha.exe</strong> 是一款以朝圣为外壳的自传体游戏。玩家在表面上是登山寻找"真正的佛"，而这条路径实则是一套基于奥古斯都式逻辑的帝国评估系统，衡量一个人如何建构意义、秩序与身份。游戏在六个场景中推进：山道自由探索、模拟元老院、帝国模式编译器（大殿）、群众广场、白色虚空（帝国回归协议）与回响论坛。目标并非"通关"，而是体验身份如何在一个更大的意识形态循环中成为一种模式。
+        </p>
+      </div>
+
+      <div class="project-specs">
+        <h2>1. How to Play</h2>
+        <h3>Movement</h3>
+        <ul class="spec-list">
+          <li>Use <strong>WASD</strong> or <strong>Arrow Keys</strong> to walk freely along the mountain path.</li>
+          <li>Approach NPCs or citizens to trigger proximity effects.</li>
+        </ul>
+        <h3>Interaction</h3>
+        <ul class="spec-list">
+          <li><strong>Mouse click:</strong> Talk to an NPC when standing close enough.</li>
+          <li><strong>SPACE:</strong> At the mountain gate → enter the Senate (Scene 5). In the Senate → proceed to the Hall (Scene 2). In the Mass Square → continue to the Void or Forum.</li>
+          <li><strong>In the Hall (Scene 2):</strong> Click Buddha statues. If a glowing statue is clicked, you instantly pass the Compiler. Otherwise, satisfy the required number of clicks to progress.</li>
+          <li><strong>Scene 3: Void</strong> — Press <strong>R</strong> to "rebirth" and restart the loop.</li>
+          <li><strong>Scene 4: Forum of Echoes</strong> — Press <strong>Y</strong> or <strong>N</strong> to accept/decline becoming the next imperial pattern (your choice is recorded but does not change the outcome).</li>
+        </ul>
+        <h3>End / Loop</h3>
+        <ul class="spec-list">
+          <li>After Void or Forum, pressing <strong>R</strong> returns you to Scene 1.</li>
+          <li>Each loop remembers your imperial profile and leaves marks on the ground.</li>
+        </ul>
+      </div>
+
+      <div class="project-specs">
+        <h2>2. Game Summary</h2>
+        <p>Seeking Buddha.exe is an autobiographical game disguised as a pilgrimage. On the surface, the player climbs a mountain seeking the "real Buddha." But the path is actually an imperial evaluation system built on Augustus-like logic, measuring how a person constructs meaning, order and identity.</p>
+        <p>The game progresses in six scenes:</p>
+        <ul class="spec-list">
+          <li><strong>Mountain Path – Free Exploration:</strong> The player moves freely, meeting four key NPCs—Monk, Merchant, Tourist and Glitch-bot—each representing a different cognitive or political archetype. Pixel citizens observe silently, producing brief "crowd whispers" when the player walks near.</li>
+          <li><strong>Simulated Senate:</strong> Twelve pixel senators vote on the player's emerging "pattern." Their approval depends on Belief, Doubt, Truth Signal, and the NPCs the player favored.</li>
+          <li><strong>Imperial Pattern Compiler (Hall):</strong> A hall of Buddha-statues acts as a diagnostic machine. The statue glow pattern shifts by the player's temperament (chaotic → patterned → predictive). Clicking correct statues determines whether the player proceeds to the Forum or the Void.</li>
+          <li><strong>Mass Square:</strong> Citizens reappear; their "mood" (stable / cold / unrest) is determined by Senate approval and the player's imperial alignment.</li>
+          <li><strong>Scene 3: The White Void (Imperium Return Protocol):</strong> Augustus's pixel face appears, delivering a personalized reading about the empire-type the player unconsciously produced.</li>
+          <li><strong>Scene 4: Forum of Echoes:</strong> A hall of inscriptions reveals that all NPC lines were fragments from earlier imperial prototypes. The player learns: "I created eternity, and eternity turned back to digest me." The loop then restarts. Past loops leave ghost echoes, graffiti-like marks, and shifting mountain colors, symbolizing the accumulation of personal and imperial memory.</li>
+        </ul>
+      </div>
+
+      <div class="project-specs">
+        <h2>3. Objectives & Concepts</h2>
+        <p>The game's objective is not "winning" but experiencing how identity becomes a pattern inside a larger ideological loop. It uses a pilgrimage skin and Buddha imagery; the real themes are:</p>
+        <ul class="spec-list">
+          <li>Power structure</li>
+          <li>Cognitive profiles</li>
+          <li>Historical cycles</li>
+          <li>Internalized belief and doubt</li>
+        </ul>
+        <p><strong>The four NPCs</strong> represent modules of the player's psyche: Monk → spiritual authority, moral narrative; Merchant → bureaucratic order, system-thinking; Tourist → spectatorship, external gaze; Glitch-bot → system failure, reform, collapse. Their dialogues adapt to the player's stats, shaping the empire profile: devout / bureaucrat / spectator / reformer / collapse.</p>
+        <p><strong>Concepts used:</strong> Autobiographical game design; state machines & scene-switch architecture; randomness & noise as narrative tools; variables as emotional/cognitive meters (Belief / Doubt / Truth); procedural behaviors (citizen mood, Senate probability model); loop-based storytelling (rebirth mechanic). The autobiographical layer comes from the game's emotional structure—the desire for truth, distrust of systems, need for validation, and the tension between spiritual narrative and institutional logic—drawn from personal lived experience and reinterpreted through interactive mechanics.</p>
+      </div>
+
+      <div class="project-actions">
+        <a href="projectlist.html">← back</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

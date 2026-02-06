@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShuiJing 水金</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { min-height: 100vh; }
+    .bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .bg-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.72);
+      z-index: -1;
+    }
+    body {
+      font-family: Georgia, serif;
+      color: #333;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+    }
+    a { color: #333; text-decoration: none; font-size: 14px; }
+    a:hover { text-decoration: underline; }
+    .back { margin-bottom: 2rem; }
+    .back a:hover { text-decoration: none; }
+    .project-header { margin-bottom: 2rem; }
+    .project-header h1 { font-size: 1.4rem; font-weight: normal; margin-bottom: 0.25rem; }
+    .project-tagline { font-size: 15px; color: #555; }
+    .video-wrapper { margin-bottom: 2rem; }
+    .vimeo-embed { position: relative; width: 100%; }
+    .vimeo-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .project-screenshots { margin-bottom: 2rem; }
+    .project-screenshots img { display: block; width: 100%; max-width: 800px; height: auto; margin-bottom: 1rem; }
+    .project-details { max-width: 560px; }
+    .project-details h2 { font-size: 1rem; font-weight: normal; margin: 1.5rem 0 0.5rem; }
+    .project-details p { font-size: 15px; margin-bottom: 0.75rem; }
+    .specs-grid { font-size: 15px; }
+    .spec-item { margin-bottom: 0.25rem; }
+    .spec-item strong { margin-right: 0.35rem; }
+  </style>
+</head>
+<body>
+  <img class="bg" src="image/xunjia.jpeg" alt="">
+  <div class="bg-overlay"></div>
+  <div class="back"><a href="projectlist.html">← back</a></div>
+
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>ShuiJing 水金</h1>
+      <p class="project-tagline">《寻家》 Finding a Home</p>
+    </div>
+
+    <div class="project-main-image project-main-image-vimeo" id="videoContainer">
+      <div class="video-wrapper vimeo-wrapper">
+        <div class="vimeo-embed" style="padding:56.21% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/1162198784?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="水金"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-screenshots">
+      <img src="image/screenshot1.jpg" alt="">
+      <img src="image/screenshot2.jpg" alt="">
+      <img src="image/screenshot3.jpeg" alt="">
+    </div>
+
+    <div class="project-details">
+      <div class="project-info">
+        <h2>Project Overview</h2>
+        <p>
+          人的一生离开家，寻找家，找到家。万变不离其宗的一项或许由生本能（eros）驱动向目的地前进。无限感情蔓延开来，回首的路线会组成一幅人生答卷。
+        </p>
+        <p>
+          Throughout one's life, we leave home, search for home, and find home. Perhaps driven by the life instinct (eros), we move forward toward our destination. Endless emotions spread out, and looking back, the paths we've taken form a canvas of life's answers.
+        </p>
+      </div>
+
+      <div class="project-specs">
+        <h2>Project Information</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <strong>Project Type:</strong>
+            <span>Documentary Film</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
