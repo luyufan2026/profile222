@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lie Detector Camera</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { min-height: 100vh; }
+    body {
+      font-family: Georgia, serif;
+      color: #333;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      background: #f8f8f8;
+    }
+    a { color: #333; text-decoration: none; font-size: 14px; }
+    a:hover { text-decoration: underline; }
+    .back { margin-bottom: 2rem; }
+    .project-header { margin-bottom: 1.5rem; }
+    .project-header h1 { font-size: 1.5rem; font-weight: normal; margin-bottom: 0.25rem; }
+    .project-tagline { font-size: 15px; color: #555; }
+    .project-details {
+      max-width: 760px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border: 1px solid #e5e5e5;
+    }
+    .project-details h2 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin: 1.2rem 0 0.5rem;
+    }
+    .project-details h2:first-child { margin-top: 0; }
+    .project-details p {
+      font-size: 15px;
+      margin-bottom: 0.75rem;
+    }
+    .embed-section {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd;
+    }
+    .embed-section > h2 { margin-top: 0; }
+    .embed-block { margin-top: 1.25rem; }
+    .embed-block:first-of-type { margin-top: 0.75rem; }
+    .embed-block h3 {
+      font-size: 0.95rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+    .embed-frame {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+    .embed-frame iframe {
+      display: block;
+      width: 100%;
+      height: min(70vh, 520px);
+      border: 0;
+    }
+    .embed-fallback {
+      font-size: 12px;
+      color: #666;
+      margin-top: 0.35rem;
+      word-break: break-all;
+    }
+    .embed-note {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="back"><a href="projectlist.html">← back</a></div>
+
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>Lie Detector Camera</h1>
+      <p class="project-tagline">An experimental system about machine judgment and behavioral control</p>
+    </div>
+
+    <div class="project-details">
+      <h2>中文 | 项目介绍</h2>
+      <p>
+        《Lie Detector Camera》是一套实验性的交互影像系统。它通过摄像头捕捉使用者在画面中的运动幅度，并据此给出“真话/假话”的判断：当身体动作较大时，系统判定为 FALSE；当动作较小、相对静止时，系统判定为 TRUE。
+      </p>
+      <p>
+        这一判断逻辑是有意设计得简单且不可靠的。项目并不追求“测谎准确性”，而是将“诚实”这种复杂的人类行为，粗暴地简化为单一可量化变量，以此揭示：一个系统即使规则武断，也可以借由技术外观制造“客观判断”的幻觉。
+      </p>
+      <p>
+        在反馈机制上，系统采用强烈的奖惩对比：当结果为 TRUE 时，屏幕出现大规模烟花，提供正向奖励；当结果为 FALSE 时，画面被扭曲并碎片化，形成类似万花筒的混乱视觉，暗示惩罚与系统失稳。用户在这一过程中会逐渐意识到，自己正在为了迎合“机器权威”而主动调整行为。
+      </p>
+      <p>
+        本项目关注的核心并非真假本身，而是机器感知、行为规训与“客观真相”幻觉之间的关系。
+      </p>
+
+      <h2>English | Project Description</h2>
+      <p>
+        Lie Detector Camera is an experimental interactive camera system that classifies whether a person is telling the truth based on physical movement in front of the camera. Large motion is labeled as FALSE, while relative stillness is labeled as TRUE.
+      </p>
+      <p>
+        This intentionally simplified and unreliable logic does not aim to detect real truthfulness. Instead, it reduces a complex human behavior to a single measurable variable, exposing how a system can claim objectivity while relying on arbitrary rules.
+      </p>
+      <p>
+        The interface uses immediate reward and punishment feedback: TRUE triggers large-scale fireworks, while FALSE produces a distorted, fragmented, kaleidoscope-like image. Through this contrast, users become more aware of how they emotionally and physically adjust themselves in response to an authoritative but flawed system.
+      </p>
+
+      <div class="embed-section">
+        <h2>Interactive｜内嵌预览</h2>
+        <p class="embed-note">
+          下列 sketch 直接嵌入本页；若浏览器拦截摄像头，请在提示中允许当前站点使用摄像头。内嵌若无法显示，可复制下方链接在浏览器单独打开。
+        </p>
+        <div class="embed-block">
+          <h3>White Box（过程版）</h3>
+          <div class="embed-frame">
+            <iframe
+              src="https://editor.p5js.org/luy464/full/9HqWQG95q"
+              title="Lie Detector Camera — White Box"
+              loading="lazy"
+              allow="camera; microphone; fullscreen; autoplay; encrypted-media; picture-in-picture"
+            ></iframe>
+          </div>
+          <p class="embed-fallback">https://editor.p5js.org/luy464/full/9HqWQG95q</p>
+        </div>
+        <div class="embed-block">
+          <h3>Final（终版）</h3>
+          <div class="embed-frame">
+            <iframe
+              src="https://editor.p5js.org/luy464/full/8TW72XQWn"
+              title="Lie Detector Camera — Final"
+              loading="lazy"
+              allow="camera; microphone; fullscreen; autoplay; encrypted-media; picture-in-picture"
+            ></iframe>
+          </div>
+          <p class="embed-fallback">https://editor.p5js.org/luy464/full/8TW72XQWn</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Typographic Interpretation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { min-height: 100vh; }
+    body {
+      font-family: Georgia, serif;
+      color: #333;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      background: #f8f8f8;
+    }
+    a { color: #333; text-decoration: none; font-size: 14px; }
+    a:hover { text-decoration: underline; }
+    .back { margin-bottom: 2rem; }
+    .project-header { margin-bottom: 1.5rem; }
+    .project-header h1 { font-size: 1.5rem; font-weight: normal; margin-bottom: 0.25rem; }
+    .project-tagline { font-size: 15px; color: #555; }
+    .project-details {
+      max-width: 760px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border: 1px solid #e5e5e5;
+    }
+    .project-details h2 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin: 1.2rem 0 0.5rem;
+    }
+    .project-details h2:first-child { margin-top: 0; }
+    .project-details p {
+      font-size: 15px;
+      margin-bottom: 0.75rem;
+    }
+    .embed-section {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd;
+    }
+    .embed-section > h2 { margin-top: 0; }
+    .embed-block { margin-top: 1.25rem; }
+    .embed-block:first-of-type { margin-top: 0.75rem; }
+    .embed-block h3 {
+      font-size: 0.95rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+    .embed-frame {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+    .embed-frame iframe {
+      display: block;
+      width: 100%;
+      height: min(70vh, 520px);
+      border: 0;
+    }
+    .embed-fallback {
+      font-size: 12px;
+      color: #666;
+      margin-top: 0.35rem;
+      word-break: break-all;
+    }
+    .embed-note {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="back"><a href="projectlist.html">← back</a></div>
+
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>Typographic Interpretation</h1>
+      <p class="project-tagline">Three interactive sketches—WHO, KNOW, and TIME</p>
+    </div>
+
+    <div class="project-details">
+      <h2>Overview</h2>
+      <p>
+        This project interprets three short words through interactive typography and motion. Each piece is built in p5.js: the meaning of the word shapes the visual logic—faces for identity, a key and door for knowledge, and a clock with a timeline for time. Together, they treat type not only as letters but as a way to stage an idea you can touch and play with.
+      </p>
+
+      <h2>WHO</h2>
+      <p>
+        The word <em>who</em> asks who someone is. The sketch uses many different faces as a stand-in for multiple identities. When you click, each face opens into a more detailed view of the same person—like moving from a crowd to a close-up—and the interaction links the abstract question “who?” to concrete human faces.
+      </p>
+
+      <h2>KNOW</h2>
+      <p>
+        The word <em>know</em> is shown as discovery after access: a key unlocks a door, and once the door opens, you “know” something you could not see before. The background layers in text from H. P. Lovecraft’s <em>The Call of Cthulhu</em>, which speaks to how human knowledge brushes against a vast, indifferent world. The piece sets personal, almost mechanical revelation (open the door) beside literary ideas about the limits and danger of what we think we know.
+      </p>
+
+      <h2>TIME</h2>
+      <p>
+        The word <em>time</em> is expressed with a clock and a timeline. The clock marks the ordinary sense of passing minutes, while the timeline stretches that idea into a line you can read along. On the timeline you can see past, present, and future as related positions—so the flow of time is not only a spinning hand but a story laid out in order.
+      </p>
+
+      <div class="embed-section">
+        <h2>Embedded sketches</h2>
+        <p class="embed-note">
+          The three sketches are embedded below. If a embed fails to load, copy the URL under it and open it in your browser.
+        </p>
+
+        <div class="embed-block">
+          <h3>WHO</h3>
+          <div class="embed-frame">
+            <iframe
+              src="https://editor.p5js.org/luy464/full/YQNuxCKiA"
+              title="Typographic Interpretation — WHO"
+              loading="lazy"
+              allow="camera; microphone; fullscreen; autoplay; encrypted-media; picture-in-picture"
+            ></iframe>
+          </div>
+          <p class="embed-fallback">https://editor.p5js.org/luy464/full/YQNuxCKiA</p>
+        </div>
+
+        <div class="embed-block">
+          <h3>KNOW</h3>
+          <div class="embed-frame">
+            <iframe
+              src="https://editor.p5js.org/luy464/full/WUz93VHjo"
+              title="Typographic Interpretation — KNOW"
+              loading="lazy"
+              allow="camera; microphone; fullscreen; autoplay; encrypted-media; picture-in-picture"
+            ></iframe>
+          </div>
+          <p class="embed-fallback">https://editor.p5js.org/luy464/full/WUz93VHjo</p>
+        </div>
+
+        <div class="embed-block">
+          <h3>TIME</h3>
+          <div class="embed-frame">
+            <iframe
+              src="https://editor.p5js.org/luy464/full/8o-LoI6uT"
+              title="Typographic Interpretation — TIME"
+              loading="lazy"
+              allow="camera; microphone; fullscreen; autoplay; encrypted-media; picture-in-picture"
+            ></iframe>
+          </div>
+          <p class="embed-fallback">https://editor.p5js.org/luy464/full/8o-LoI6uT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
