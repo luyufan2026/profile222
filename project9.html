@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drink + Scene Generator</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { min-height: 100vh; }
+    body {
+      font-family: Georgia, serif;
+      color: #333;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      background: #f8f8f8;
+    }
+    a { color: #333; text-decoration: none; font-size: 14px; }
+    a:hover { text-decoration: underline; }
+    .back { margin-bottom: 2rem; }
+    .project-header { margin-bottom: 1.5rem; }
+    .project-header h1 { font-size: 1.5rem; font-weight: normal; margin-bottom: 0.25rem; }
+    .project-tagline { font-size: 15px; color: #555; }
+    .project-details {
+      max-width: 760px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border: 1px solid #e5e5e5;
+    }
+    .project-details h2 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin: 1.2rem 0 0.5rem;
+    }
+    .project-details h2:first-child { margin-top: 0; }
+    .project-details p {
+      font-size: 15px;
+      margin-bottom: 0.75rem;
+    }
+    .embed-section {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd;
+    }
+    .embed-frame {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #1a1a1a;
+      margin-top: 0.75rem;
+    }
+    .embed-frame iframe {
+      display: block;
+      width: 100%;
+      height: min(72vh, 580px);
+      border: 0;
+    }
+    .embed-fallback {
+      font-size: 12px;
+      color: #666;
+      margin-top: 0.35rem;
+      word-break: break-all;
+    }
+    .embed-note {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="back"><a href="projectlist.html">← back</a></div>
+
+  <section class="project-detail">
+    <div class="project-header">
+      <h1>Drink + Scene Generator</h1>
+      <p class="project-tagline">A real-time drink and atmosphere suggestion system</p>
+    </div>
+
+    <div class="project-details">
+      <h2>Project Overview</h2>
+      <p>
+        Users answer a sequence of questions about their current state, taste preference, social situation, and surrounding environment. Based on these inputs, the system generates a drink recommendation and pairs it with a matching scene, such as a beach, club, cinema, wedding, or birthday setting.
+      </p>
+      <p>
+        This is not a personality test. It is a lightweight decision system that transforms present-moment conditions into a drink and scene suggestion.
+      </p>
+
+      <h2>Target Audience</h2>
+      <p>
+        The project is designed for international students living in New York. This group frequently shifts between different contexts: studying alone, socializing with friends, or exploring the city. Because of cultural differences, irregular schedules, and changing routines, they often face small but constant daily decisions, including what to drink and what atmosphere suits the moment.
+      </p>
+      <p>
+        This tool offers a simple and engaging way to navigate those choices.
+      </p>
+
+      <h2>Project Goal</h2>
+      <p>
+        The goal is to make drink selection interactive rather than presenting a static menu or a basic questionnaire. The system considers mood, environment, social context, taste preference, and a random number, so the output feels generated in real time from the user&apos;s current situation.
+      </p>
+      <p>
+        The project explores whether a rule-based system can produce drink and scene combinations that feel both interesting and reasonable.
+      </p>
+
+      <h2>Interaction Design</h2>
+      <p>
+        When users open the page, they answer 17 questions in sequence. The questions cover taste, alcohol level, temperature, mood, social condition, environmental factors, and random input.
+      </p>
+      <p>
+        Event handlers capture each response and convert it to numerical values. These values pass through a mapping logic that produces the final two-part output: one recommended drink and one matching scene.
+      </p>
+      <p>
+        User responses and generated results are also stored with localStorage, allowing the data to persist after refresh.
+      </p>
+
+      <div class="embed-section">
+        <h2>Live Demo</h2>
+        <p class="embed-note">
+          If the embed does not load, open the URL below in a browser tab.
+        </p>
+        <div class="embed-frame">
+          <iframe
+            src="https://editor.p5js.org/luy464/full/auh_9y8zd"
+            title="Drink + Scene Generator"
+            loading="lazy"
+            allow="camera; microphone; fullscreen; autoplay; encrypted-media; picture-in-picture"
+          ></iframe>
+        </div>
+        <p class="embed-fallback">https://editor.p5js.org/luy464/full/auh_9y8zd</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
